@@ -31,12 +31,12 @@ $tab = [
     89,"Papa"
 ];
 
-$tab = [20,3,45,67,7];
+$tab = [20,3,45,67,7,11,9];
 
 
 //foreach ---> pour chaque element
 //for     ---> pour i allant de x a y faire
-$i = 0;
+/* $i = 0;
 foreach($tab as $item){
     echo "Position "
     .$i
@@ -48,7 +48,24 @@ foreach($tab as $item){
     //$i = $i + 1;
     //$i +=1;
     $i++;
-}
+} */
 
+/*for ($i=0;$i<count($tab);$i++){
+    echo $tab[$i]*2 ."\n";
+} */
+
+//While ---> Tant que une condition est vrai alors faire
+$i =0;
+while($i<count($tab)){
+    echo $i." - ". $tab[$i]*2 ."\n";
+   // echo $i ."\n";
+    $i++;
+}
+echo "------------------------- \n";
+$i = 0;
+do{
+    echo $i." - ". $tab[$i]*2 ."\n";
+    $i++; 
+}while($i<count($tab));
 
 ?>
