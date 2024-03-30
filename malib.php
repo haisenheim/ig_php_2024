@@ -18,9 +18,17 @@
 
     function facto($a){
         $p = 1;
-        for($i=1;$i<$a;$i++){
+        for($i=1;$i<=$a;$i++){
             $p = $p*$i;
         }
         return $p;
+    }
+    function rfacto($a){
+        if($a == 0){
+            return 1;
+        }else{
+          return  $a * rfacto($a-1);
+        }
+
     }    
 ?>
